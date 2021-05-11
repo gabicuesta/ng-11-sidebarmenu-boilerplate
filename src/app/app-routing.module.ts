@@ -1,7 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { SummaryComponent } from './components/summary/summary.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  { path: 'summary', component: SummaryComponent },
+  { path: '**', component: SummaryComponent  }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
